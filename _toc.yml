@@ -1,0 +1,34 @@
+- file: Intro
+
+- part: Getting started
+  chapters:
+  - file: Getting_started/Getting_started_page1
+
+- part: Setting up firebase
+  chapters:
+  - file: Setting_up_firebase/Setting_up_firebase_page1
+  - file: Setting_up_firebase/Uploading_stimuli_page1
+
+- part: Setting up stimuli
+  chapters:
+  - file: Serving_video_stimuli/Serving_video_stimuli_localhost_page1
+
+- part: Customizing the app
+  chapters:
+  - file: Customizing_the_app/Customizing_the_app_page1
+  - file: Customizing_the_app/Running_in_dev_mode_page1
+
+- part: Using the app
+  chapters:
+  - file: Using_the_app/Building_the_website_page1
+  - file: Using_the_app/Using_the_app_mturk_page1
+
+- part: Getting the data from firebase
+  chapters:
+  - file: Getting_the_data_from_firebase/Getting_the_data_from_firebase_page1
+
+- part: Contact
+  chapters:
+  - file: Contact/Contact_page1
+
+

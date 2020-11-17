@@ -1,0 +1,4 @@
+title: "Continuous Rater"
+logo: Images/logo.png
+execute:
+  execute_notebooks: "off"
