@@ -1,5 +1,7 @@
 # Introduction
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4279654.svg)](https://doi.org/10.5281/zenodo.4279654)
+
 `continuous-rater` is an app that allows users to provide continuous ratings while watching videos or listening to audio. It is compatible with Amazon Mechanical Turk and can be customized to suit various experimental needs. 
 
 `continuous-rater` requires some configuration before use: this website contains instructions for all necessary steps, as well as sections that include helpful code snippets for easy interfacing with MTurk and Google Firebase.

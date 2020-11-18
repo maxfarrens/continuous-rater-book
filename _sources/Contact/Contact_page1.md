@@ -1,5 +1,6 @@
 # Contact
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4279654.svg)](https://doi.org/10.5281/zenodo.4279654)
 
 This app was built by Max Farrens (with assistance from Luke Chang and Eshin Jolly) for use by [COSAN Lab](https://cosanlab.com/). 
 
