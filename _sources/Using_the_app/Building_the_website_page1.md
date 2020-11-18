@@ -4,9 +4,9 @@ Once you are satisfied with how your customized app looks in development mode an
 
 ## Using Netlify
 
-I recommend using [Netlify](#https://www.netlify.com/) to host your version of `continuous-rater`. It is free and simple to use. For a more in depth explanation of why this is a good choice (and a list of alternative options) read this [excellent post](#https://eshinjolly.com/svelteturk/#/custom-experiments) by Eshin Jolly. 
+I recommend using [Netlify](https://www.netlify.com/) to host your version of `continuous-rater`. It is free and simple to use. For a more in depth explanation of why this is a good choice (and a list of alternative options) read this [excellent post](https://eshinjolly.com/svelteturk/#/custom-experiments) by Eshin Jolly. 
 
-Start by creating a free account on Netlify. Next, link Netlify with your Github account (if it has not done so automatically). If you do not have a Github, you will need to create one [here](#https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) for this to work. Netlify works by building a site from a Github repository, so you will also need to ensure your local repository is connected to your account (see below for directions). Once you have setup your Netlify account and have it connected to your Github, click on the **New site from Git** button and then select the **Github** option. 
+Start by creating a free account on Netlify. Next, link Netlify with your Github account (if it has not done so automatically). If you do not have a Github, you will need to create one [here](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) for this to work. Netlify works by building a site from a Github repository, so you will also need to ensure your local repository is connected to your account (see below for directions). Once you have setup your Netlify account and have it connected to your Github, click on the **New site from Git** button and then select the **Github** option. 
 
 A new window will pop up, and you should be able to select the `continuous-rater` repository from your Github. After selecting this, you will need to fill in details about **Deploy settings**. Leave the **Owner** field with its default, and ensure that the **Branch to deploy** is set to master (or whatever branch you are working with). Under **Basic build settings** input 
 
@@ -50,7 +50,7 @@ git add .
 git commit -m "first commit"
 ```
 
-For more information, see [here](#https://kbroman.org/github_tutorial/pages/init.html). After these steps are complete, login to your Github and click the green **New** button to initialize a new remote repository. Name it accordingly, select Public or Private based on your needs and click **Create repository**.
+For more information, see [here](https://kbroman.org/github_tutorial/pages/init.html). After these steps are complete, login to your Github and click the green **New** button to initialize a new remote repository. Name it accordingly, select Public or Private based on your needs and click **Create repository**.
 
 On the next page, follow the second set of instructions, and enter the following lines in your command line (with the relevant parts changed to fit your specific case):
 

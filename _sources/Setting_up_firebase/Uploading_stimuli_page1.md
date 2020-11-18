@@ -5,4 +5,4 @@ You need to create a table for your audio/video stimuli within Firebase itself (
 
 ![image](../Images/stimuli_table.png)<p>&nbsp;</p>
 
-For information on how to best serve audio/video stimuli, see the section on [serving stimuli]().
+For information on how to best serve audio/video stimuli, see the section on Setting up stimuli.

@@ -101,7 +101,7 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Getting_started/Getting_started_page1.html">
-   Grabbing the code
+   Downloading the app
   </a>
  </li>
 </ul>
@@ -287,8 +287,8 @@
 <p>Once you are satisfied with how your customized app looks in development mode and want to use it to collect data (via Amazon Mechanical Turk or on local subjects in a lab), you need to build and host the website.</p>
 <div class="section" id="using-netlify">
 <h2>Using Netlify<a class="headerlink" href="#using-netlify" title="Permalink to this headline">¶</a></h2>
-<p>I recommend using <a class="reference external" href="#https://www.netlify.com/">Netlify</a> to host your version of <code class="docutils literal notranslate"><span class="pre">continuous-rater</span></code>. It is free and simple to use. For a more in depth explanation of why this is a good choice (and a list of alternative options) read this <a class="reference external" href="#https://eshinjolly.com/svelteturk/#/custom-experiments">excellent post</a> by Eshin Jolly.</p>
-<p>Start by creating a free account on Netlify. Next, link Netlify with your Github account (if it has not done so automatically). If you do not have a Github, you will need to create one <a class="reference external" href="#https://github.com/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">here</a> for this to work. Netlify works by building a site from a Github repository, so you will also need to ensure your local repository is connected to your account (see below for directions). Once you have setup your Netlify account and have it connected to your Github, click on the <strong>New site from Git</strong> button and then select the <strong>Github</strong> option.</p>
+<p>I recommend using <a class="reference external" href="https://www.netlify.com/">Netlify</a> to host your version of <code class="docutils literal notranslate"><span class="pre">continuous-rater</span></code>. It is free and simple to use. For a more in depth explanation of why this is a good choice (and a list of alternative options) read this <a class="reference external" href="https://eshinjolly.com/svelteturk/#/custom-experiments">excellent post</a> by Eshin Jolly.</p>
+<p>Start by creating a free account on Netlify. Next, link Netlify with your Github account (if it has not done so automatically). If you do not have a Github, you will need to create one <a class="reference external" href="https://github.com/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">here</a> for this to work. Netlify works by building a site from a Github repository, so you will also need to ensure your local repository is connected to your account (see below for directions). Once you have setup your Netlify account and have it connected to your Github, click on the <strong>New site from Git</strong> button and then select the <strong>Github</strong> option.</p>
 <p>A new window will pop up, and you should be able to select the <code class="docutils literal notranslate"><span class="pre">continuous-rater</span></code> repository from your Github. After selecting this, you will need to fill in details about <strong>Deploy settings</strong>. Leave the <strong>Owner</strong> field with its default, and ensure that the <strong>Branch to deploy</strong> is set to master (or whatever branch you are working with). Under <strong>Basic build settings</strong> input</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">run</span> <span class="n">build</span>
 </pre></div>
@@ -320,7 +320,7 @@
 <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;first commit&quot;</span>
 </pre></div>
 </div>
-<p>For more information, see <a class="reference external" href="#https://kbroman.org/github_tutorial/pages/init.html">here</a>. After these steps are complete, login to your Github and click the green <strong>New</strong> button to initialize a new remote repository. Name it accordingly, select Public or Private based on your needs and click <strong>Create repository</strong>.</p>
+<p>For more information, see <a class="reference external" href="https://kbroman.org/github_tutorial/pages/init.html">here</a>. After these steps are complete, login to your Github and click the green <strong>New</strong> button to initialize a new remote repository. Name it accordingly, select Public or Private based on your needs and click <strong>Create repository</strong>.</p>
 <p>On the next page, follow the second set of instructions, and enter the following lines in your command line (with the relevant parts changed to fit your specific case):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">YOUR_USERNAME</span><span class="o">/</span><span class="n">YOUR_REPO_NAME</span>
 <span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span>

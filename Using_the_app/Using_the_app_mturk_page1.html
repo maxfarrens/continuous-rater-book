@@ -101,7 +101,7 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Getting_started/Getting_started_page1.html">
-   Grabbing the code
+   Downloading the app
   </a>
  </li>
 </ul>
@@ -296,11 +296,11 @@
 <h1>Using the app with Amazon MTurk<a class="headerlink" href="#using-the-app-with-amazon-mturk" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="svelteturk">
 <h2>SvelteTurk<a class="headerlink" href="#svelteturk" title="Permalink to this headline">¶</a></h2>
-<p>I highly recommend using <a class="reference external" href="#https://eshinjolly.com/svelteturk/#/">SvelteTurk</a> (a graphical MTurk HIT-making app by Eshin Jolly) to make running <code class="docutils literal notranslate"><span class="pre">continuous-rater</span></code> as simple as possible. Download the latest version <a class="reference external" href="#https://github.com/ejolly/svelteturk/releases">here</a> and read more about it <a class="reference external" href="#https://github.com/ejolly/svelteturk">here</a>. However, if you are familiar with Python and want to write your own code to control the process, read on!</p>
+<p>I highly recommend using <a class="reference external" href="https://eshinjolly.com/svelteturk/#/">SvelteTurk</a> (a graphical MTurk HIT-making app by Eshin Jolly) to make running <code class="docutils literal notranslate"><span class="pre">continuous-rater</span></code> as simple as possible. Download the latest version <a class="reference external" href="https://github.com/ejolly/svelteturk/releases">here</a> and read more about it <a class="reference external" href="https://github.com/ejolly/svelteturk">here</a>. However, if you are familiar with Python and want to write your own code to control the process, read on!</p>
 </div>
 <div class="section" id="mturk-external-question">
 <h2>MTurk external question<a class="headerlink" href="#mturk-external-question" title="Permalink to this headline">¶</a></h2>
-<p>In order to use an external website within MTurk, you have to use the AWS <a class="reference external" href="#https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html">External question</a> protocol. This entails creating a <code class="docutils literal notranslate"><span class="pre">.xml</span></code> file that contains a reference to your website (built with Netlify, or something similar). Here is the template you need to use (only edit the <strong>YOUR URL HERE</strong> section on the third line):</p>
+<p>In order to use an external website within MTurk, you have to use the AWS <a class="reference external" href="https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ExternalQuestionArticle.html">External question</a> protocol. This entails creating a <code class="docutils literal notranslate"><span class="pre">.xml</span></code> file that contains a reference to your website (built with Netlify, or something similar). Here is the template you need to use (only edit the <strong>YOUR URL HERE</strong> section on the third line):</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;ExternalQuestion</span> <span class="na">xmlns=</span><span class="s">&quot;http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ExternalURL&gt;</span>YOUR URL HERE<span class="nt">&lt;/ExternalURL&gt;</span>
@@ -316,7 +316,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">boto3</span>
 </pre></div>
 </div>
-<p>You will also need your AWS access key id and secret access key. Learn about how to find/generate them <a class="reference external" href="#https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/">here</a>.</p>
+<p>You will also need your AWS access key id and secret access key. Learn about how to find/generate them <a class="reference external" href="https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/">here</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following section has code that will connect to your actual MTurk account and create a HIT visible to the worldwide marketplace. This means REAL MONEY IS INVOLVED. If you would simply like to test your HIT, see the Sandbox section below.</p>
@@ -352,11 +352,10 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HITID = &quot;</span> <span class="o">+</span> <span class="n">new_hit</span><span class="p">[</span><span class="s1">&#39;HIT&#39;</span><span class="p">][</span><span class="s1">&#39;HITId&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; (Use to Get Results)&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>If you just want to test</p>
 </div>
 <div class="section" id="mturk-sandbox-mode">
 <h2>MTurk sandbox mode<a class="headerlink" href="#mturk-sandbox-mode" title="Permalink to this headline">¶</a></h2>
-<p>Before deploying your HIT for real, it is a good idea to first run it in sandbox mode to validate the app and debug if necessary. The process of creating a sandbox HIT is very similar to the process of creating a real HIT:</p>
+<p>Before deploying your HIT for real, it’s a good idea to run it in sandbox mode. The process of creating a sandbox HIT is very similar to the process of creating a real HIT:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">boto3</span>
 <span class="kn">import</span> <span class="nn">xmltodict</span>
 </pre></div>
@@ -389,7 +388,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HITID = &quot;</span> <span class="o">+</span> <span class="n">new_hit</span><span class="p">[</span><span class="s1">&#39;HIT&#39;</span><span class="p">][</span><span class="s1">&#39;HITId&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; (Use to Get Results)&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>See the <a class="reference external" href="#https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html">boto3 docs</a> for more information on how to control your HITs via Python.</p>
+<p>See the <a class="reference external" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html">boto3 docs</a> for more information on how to control your HITs via Python.</p>
 </div>
 </div>
 

@@ -4,8 +4,11 @@
 
 `continuous-rater` requires some configuration before use: this website contains instructions for all necessary steps, as well as sections that include helpful code snippets for easy interfacing with MTurk and Google Firebase.
 
-This app was built by Max Farrens for [COSAN Lab](https://cosanlab.com/). **Click [here](https://vibrant-williams-4184f2.netlify.app/) for a demo of the app in action!**
+This app was built by Max Farrens (with help from Eshin Jolly and Luke Chang) for [COSAN Lab](https://cosanlab.com/), and **supported by funding from the National Institute of Mental Health R01MH116026**.
+
+Click [here](https://continuous-rater-demo.netlify.app/) for a demo of the app in action! Click [here](https://github.com/maxfarrens/continuous-rater) for the Github repo.
 
 ---
 
 ![](./Images/demo.gif)
+

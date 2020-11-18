@@ -1,4 +1,6 @@
-# Grabbing the code
+# Downloading the app
+
+Link to Github repo: [github.com/maxfarrens/continuous-rater](https://github.com/maxfarrens/continuous-rater)
 
 1. If you do not already have it installed, install [Node.js](https://nodejs.org/en/)
 
