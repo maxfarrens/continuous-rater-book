@@ -316,9 +316,14 @@
 <h2>HIT variables<a class="headerlink" href="#hit-variables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">HITPay</span></code> – compensation for completion of task. Format as X.XX (e.g., 2.50), and do not include a $ symbol</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">userGroup</span></code> – name of Firebase collection of participants for current task. Can be whatever you want(e.g., MTurk Group)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">estHITTime</span></code> – estimated time it should take workers to complete task (in minutes; e.g., 5)<p> </p></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">estHITTime</span></code> – estimated time it should take workers to complete task (in minutes; e.g., 5)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">userGroup</span></code> – name of Firebase collection of participants for current task. Can be whatever you want (e.g., MTurk Group)</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The app will not work without the ‘userGroup’ variable populated! When just trying things out, I recommend a name like “Demo”. The app will automatically create this group in Firebase, and you can easily remove it later when deploying the app for real data collection. This helps keeps things organized.</p>
+</div>
+<p>&nbsp;</p>
 </div>
 <div class="section" id="stimuli-variables">
 <h2>Stimuli variables<a class="headerlink" href="#stimuli-variables" title="Permalink to this headline">¶</a></h2>

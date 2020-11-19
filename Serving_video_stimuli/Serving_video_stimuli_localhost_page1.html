@@ -267,6 +267,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#testing-with-local-files">
+   Testing with local files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#using-aws-for-serving">
    Using AWS for serving
   </a>
@@ -298,9 +303,13 @@
 <li><p><strong>Name your files without special characters or spaces</strong> to ensure compatibility with <code class="docutils literal notranslate"><span class="pre">continuous-rater</span></code>. For example, if a video stimulus is called <strong>Cops Don’t Cry</strong> and is in the <code class="docutils literal notranslate"><span class="pre">.mp4</span></code> format, name the file <strong>CopsDontCry.mp4</strong>, removing all special characters and spaces. These exact names are used in the stimuli table your Firebase database, so simpler is better.</p></li>
 </ol>
 </div>
+<div class="section" id="testing-with-local-files">
+<h2>Testing with local files<a class="headerlink" href="#testing-with-local-files" title="Permalink to this headline">¶</a></h2>
+<p>When testing the app locally, it can be helpful to use stimuli directly available on your computer rather than dealing with storage, serving and CDNs. To accomplish this, when you create your stimuli table in Firebase (see Building a stimuli table in Firebase), fill in the local absolute path to a video stimulus (e.g. ‘/Users/maxf/Desktop/videos/MOVIE_NAME.mp4’) in lieu of a URL.</p>
+</div>
 <div class="section" id="using-aws-for-serving">
 <h2>Using AWS for serving<a class="headerlink" href="#using-aws-for-serving" title="Permalink to this headline">¶</a></h2>
-<p>I highly recommend against serving stimuli on a local server due to issues surrounding reliability/scalability (but the app will still function if you choose to do so). Instead, I recommend using <strong><a class="reference external" href="https://aws.amazon.com/s3/">AWS S3</a> to store videos and <a class="reference external" href="https://aws.amazon.com/cloudfront/">AWS CloudFront</a> (CDN) to deliver content to end-users</strong>.</p>
+<p>When it comes time to build the app for real data collection, you will need to serve your stimuli. I highly recommend against serving stimuli on a local server due to issues surrounding reliability/scalability (but the app will still function if you choose to do so). Instead, I recommend using <strong><a class="reference external" href="https://aws.amazon.com/s3/">AWS S3</a> to store videos and <a class="reference external" href="https://aws.amazon.com/cloudfront/">AWS CloudFront</a> (CDN) to deliver content to end-users</strong>.</p>
 <p>First, create an S3 storage bucket, and upload all video stimuli into that bucket. Then, create a CloudFront distribution that points to that S3 bucket. Read the docs (<a class="reference external" href="https://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html">S3</a> and <a class="reference external" href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">CloudFront</a>) to get started. <strong>Click <a class="reference external" href="https://aws.amazon.com/cloudfront/streaming/">here</a> for a very helpful video-streaming tutorial</strong> using this AWS stack.</p>
 <p>If you use this option, you can also easily integrate <a class="reference external" href="https://aws.amazon.com/mediaconvert/">AWS MediaConvert</a> to control file size, resolution and many other parameters related to your video stimuli.</p>
 </div>
