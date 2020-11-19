@@ -33,9 +33,15 @@ and will result in a consent page like this:<p>&nbsp;</p>
 
 * `HITPay` -- compensation for completion of task. Format as X.XX (e.g., 2.50), and do not include a $ symbol
 
-* `userGroup` -- name of Firebase collection of participants for current task. Can be whatever you want(e.g., MTurk Group)
+* `estHITTime` -- estimated time it should take workers to complete task (in minutes; e.g., 5)
 
-* `estHITTime` -- estimated time it should take workers to complete task (in minutes; e.g., 5)<p>&nbsp;</p>
+* `userGroup` -- name of Firebase collection of participants for current task. Can be whatever you want (e.g., MTurk Group)
+
+```{note}
+The app will not work without the 'userGroup' variable populated! When just trying things out, I recommend a name like "Demo". The app will automatically create this group in Firebase, and you can easily remove it later when deploying the app for real data collection. This helps keeps things organized. 
+```
+<p>&nbsp;</p>
+
 
 	
 

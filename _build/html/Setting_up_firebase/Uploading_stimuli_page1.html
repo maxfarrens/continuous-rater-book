@@ -256,6 +256,25 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-urls">
+   Using URLs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-local-paths">
+   Using local paths
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -265,9 +284,16 @@
                 
   <div class="section" id="building-a-stimuli-table-in-firebase">
 <h1>Building a stimuli table in Firebase<a class="headerlink" href="#building-a-stimuli-table-in-firebase" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="using-urls">
+<h2>Using URLs<a class="headerlink" href="#using-urls" title="Permalink to this headline">¶</a></h2>
 <p>You need to create a table for your audio/video stimuli within Firebase itself (IMPT: this is not where the stimuli are stored or served, but simply where they are referenced via url). Click on the <code class="docutils literal notranslate"><span class="pre">stimuli</span></code> document that you created in Cloud Firestore earlier. On the right-most column, press <strong>+ Add field</strong>. Under the <strong>Field</strong> category, input the name of one stimulus (IMPT: this name cannot include hyphens or slashes) and under the <strong>Value</strong> category, input the URL for that stimulus (e.g. Name: CopsDontCry, Field: <span class="xref myst">https://dfhda873u.cloudfront.net/CopsDontCry.mp4</span>). Then, press <strong>Add</strong>. Repeat this step for all stimuli used in the experiment. Your stimuli document should end up looking like this:</p>
 <p><img alt="image" src="../_images/stimuli_table.png" /><p> </p></p>
+</div>
+<div class="section" id="using-local-paths">
+<h2>Using local paths<a class="headerlink" href="#using-local-paths" title="Permalink to this headline">¶</a></h2>
+<p>When testing the app locally, it can be helpful to use stimuli directly available on your computer rather than dealing with storage and servers. To accomplish this, when you create your stimuli table in Firebase, fill in the local absolute path to a video stimulus (e.g. ‘/Users/maxf/Desktop/videos/MOVIE_NAME.mp4’) in lieu of a URL.</p>
 <p>For information on how to best serve audio/video stimuli, see the section on Setting up stimuli.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

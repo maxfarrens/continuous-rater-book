@@ -12,9 +12,14 @@ Whether you use a local server or a cloud-based option, there are several import
 2. **Name your files without special characters or spaces** to ensure compatibility with `continuous-rater`. For example, if a video stimulus is called **Cops Don't Cry** and is in the `.mp4` format, name the file **CopsDontCry.mp4**, removing all special characters and spaces. These exact names are used in the stimuli table your Firebase database, so simpler is better. 
 
 
+## Testing with local files
+
+When testing the app locally, it can be helpful to use stimuli directly available on your computer rather than dealing with storage, serving and CDNs. To accomplish this, when you create your stimuli table in Firebase (see Building a stimuli table in Firebase), fill in the local absolute path to a video stimulus (e.g. '/Users/maxf/Desktop/videos/MOVIE_NAME.mp4') in lieu of a URL. 
+
+
 ## Using AWS for serving
 
-I highly recommend against serving stimuli on a local server due to issues surrounding reliability/scalability (but the app will still function if you choose to do so). Instead, I recommend using **[AWS S3](https://aws.amazon.com/s3/) to store videos and [AWS CloudFront](https://aws.amazon.com/cloudfront/) (CDN) to deliver content to end-users**. 
+When it comes time to build the app for real data collection, you will need to serve your stimuli. I highly recommend against serving stimuli on a local server due to issues surrounding reliability/scalability (but the app will still function if you choose to do so). Instead, I recommend using **[AWS S3](https://aws.amazon.com/s3/) to store videos and [AWS CloudFront](https://aws.amazon.com/cloudfront/) (CDN) to deliver content to end-users**. 
 
 First, create an S3 storage bucket, and upload all video stimuli into that bucket. Then, create a CloudFront distribution that points to that S3 bucket. Read the docs ([S3](https://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html) and [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)) to get started. **Click [here](https://aws.amazon.com/cloudfront/streaming/) for a very helpful video-streaming tutorial** using this AWS stack. 
 
