@@ -14,7 +14,7 @@ Whether you use a local server or a cloud-based option, there are several import
 
 ## Testing with local files
 
-When testing the app locally, it can be helpful to use stimuli directly available on your computer rather than dealing with storage, serving and CDNs. To accomplish this, when you create your stimuli table in Firebase (see Building a stimuli table in Firebase), fill in the local absolute path to a video stimulus (e.g. '/Users/maxf/Desktop/videos/MOVIE_NAME.mp4') in lieu of a URL. 
+When testing the app locally, it can be helpful to use stimuli directly available on your computer rather than dealing with storage, serving and CDNs. However, there are security issues associated with this, and so you still need to "serve" your local stimuli to use them with the app. To accomplish this, you can use a web server that runs offline locally (like [this](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related) one!), and upload a local folder of your stimuli to that server. You can then access each stimulus through that server. When you create your stimuli table in Firebase (see Building a stimuli table in Firebase), fill in the local server URL to each video stimulus as the Value.
 
 
 ## Using AWS for serving
