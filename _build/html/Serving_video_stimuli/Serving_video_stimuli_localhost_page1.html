@@ -305,7 +305,7 @@
 </div>
 <div class="section" id="testing-with-local-files">
 <h2>Testing with local files<a class="headerlink" href="#testing-with-local-files" title="Permalink to this headline">¶</a></h2>
-<p>When testing the app locally, it can be helpful to use stimuli directly available on your computer rather than dealing with storage, serving and CDNs. To accomplish this, when you create your stimuli table in Firebase (see Building a stimuli table in Firebase), fill in the local absolute path to a video stimulus (e.g. ‘/Users/maxf/Desktop/videos/MOVIE_NAME.mp4’) in lieu of a URL.</p>
+<p>When testing the app locally, it can be helpful to use stimuli directly available on your computer rather than dealing with storage, serving and CDNs. However, there are security issues associated with this, and so you still need to “serve” your local stimuli to use them with the app. To accomplish this, you can use a web server that runs offline locally (like <a class="reference external" href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related">this</a> one!), and upload a local folder of your stimuli to that server. You can then access each stimulus through that server. When you create your stimuli table in Firebase (see Building a stimuli table in Firebase), fill in the local server URL to each video stimulus as the Value.</p>
 </div>
 <div class="section" id="using-aws-for-serving">
 <h2>Using AWS for serving<a class="headerlink" href="#using-aws-for-serving" title="Permalink to this headline">¶</a></h2>
